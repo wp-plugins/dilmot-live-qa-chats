@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-02-27 10:59+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Basepath: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp."
+"com/wp-content/plugins/dilmot\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-"
+"dilmotapp.com/wp-content/plugins/dilmot\n"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/dilmot.php:42
+msgid "Error: plugin \"Dilmot\" requires a newer version of PHP to be running."
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/dilmot.php:43
+msgid "Minimal version of PHP required: "
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/dilmot.php:44
+msgid "Your server's PHP version: "
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:271
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:297
+#, php-format
+msgid "%s - unexpected value (%s)"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:301
+#, php-format
+msgid "%s cannot be empty"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:308
+msgid "Settings were successfully updated."
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:379
+msgid "true"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:381
+msgid "false"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:384
+msgid "Administrator"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:386
+msgid "Editor"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:388
+msgid "Author"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:390
+msgid "Contributor"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:392
+msgid "Subscriber"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_OptionsManager.php:394
+msgid "Anyone"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_Plugin.php:46
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_Plugin.php:47
+msgid "create"
+msgstr "crear"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_Plugin.php:46
+msgid "a new page"
+msgstr "una nueva p&aacute;gina"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_Plugin.php:47
+msgid "a new category"
+msgstr "una nueva categor&iacute;a"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_Plugin.php:56
+msgid "Dilmot account"
+msgstr "Cuenta Dilmot"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_Plugin.php:62
+msgid "Streams category"
+msgstr "Categor&iacute;a para los streams"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_StreamShortCodeLoader.php:18
+msgid "Dilmot plugin shortcode should be included only once in each post"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_StreamShortCodeLoader.php:34
+msgid "Error in stream-id configuration (101)"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_StreamShortCodeLoader.php:37
+msgid "Error in stream-id configuration (102)"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_StreamShortCodeLoader.php:43
+msgid "You should set dilmot account in plugin settings page"
+msgstr ""
+"Deber&iacute;as actualizar la configuraci&oacute;n de tu cuenta Dilmot con "
+"la nueva API key"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_StreamShortCodeLoader.php:46
+msgid "Error in account configuration (202)"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/Dilmot_StreamShortCodeLoader.php:78
+msgid "Could not determine stream status"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/active_stream.php:7
+msgid "Failed to load published answers"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/admin_error.php:4
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/error.php:5
+msgid "Unexpected error occured"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/settings.php:3
+msgid "Plugin Settings"
+msgstr "Configuraci&oacute;n del plugin"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/settings.php:7
+msgid "Following errors occured"
+msgstr ""
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/settings.php:17
+msgid ""
+"Copy the following information and paste it in the <i>WordPress settings</i> "
+"section of your <a href=\"http://www.dilmot.com\" >Dilmot</a> account:"
+msgstr ""
+"Copia la siguiente informaci&oacute;n y ponla en la secci&oacute;n de "
+"<i>WordPress settings</i> de tu cuenta <a href=\"http://www.dilmot.com\" "
+">Dilmot</a>:"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/settings.php:20
+msgid "Plugin URL"
+msgstr "Plugin URL"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/settings.php:24
+msgid "API Key"
+msgstr "API Key"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/settings.php:35
+msgid "Are you sure you want to reset your API key?"
+msgstr "¿Est&aacute;s seguro de que deseas resetear to API key?"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/settings.php:50
+msgid "You should update your dilmot account settings with the new API key"
+msgstr ""
+"Deber&iacute;as actualizar la configuraci&oacute;n de tu cuenta Dilmot con "
+"la nueva API key"
+
+#: /Users/idejuan/Dropbox/0-dev/webs_dev/dev.wp38-dilmotapp.com/wp-content/plugins/dilmot/templates/settings.php:61
+msgid "Introduce the the following information regarding your Dilmot account:"
+msgstr "Introduce la siguiente informaci&oacute;n acerca de tu cuenta Dilmot:"
+
+#~ msgid ""
+#~ "In order to avoid streams appear in your blog, exlude this category from "
+#~ "your blog page."
+#~ msgstr ""
+#~ "para evitar que los streams de Dilmot aparezcan en tu blog, tendr&aacute;"
+#~ "s que excluir esta categor&iacute;a de tu p&aacute;gina de blog"
+
+#~ msgid "Application Key"
+#~ msgstr "Application Key"
