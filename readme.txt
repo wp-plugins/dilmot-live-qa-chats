@@ -6,7 +6,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 0.1
+Stable tag: 1.0
 
 The Dilmot plugin allows you to host real-time Q&A chats in your WordPress site by linking your WordPress site with your Dilmot.com account. When you create a stream (chat page) in Dilmot, a new post will be created in the WordPress site where users will be able to send their questions and the live Q&A will be hosted.
 
@@ -68,3 +68,7 @@ Make sure that you have your WordPress debug configuration, in the wp-config.php
 
 = 0.1 =
 - Initial Revision
+
+= 1.0 =
+- First public version in WordPress repository
+
