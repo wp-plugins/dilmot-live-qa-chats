@@ -8,12 +8,13 @@ Requires at least: 3.5
 Tested up to: 4.1
 Stable tag: 1.0
 
-The Dilmot plugin allows you to host real-time Q&A chats in your WordPress site by linking your WordPress site with your Dilmot.com account. When you create a stream (chat page) in Dilmot, a new post will be created in the WordPress site where users will be able to send their questions and the live Q&A will be hosted.
+The Dilmot plugin allows you to host real-time Q&A chats in your WordPress site by linking your WordPress site with your Dilmot.com account. 
 
 == Description ==
 
 Dilmot is a web participation platform. With this plugin you can host live moderated conversations between a guest speaker and the audience. It will allow your readers to send the questions through a simple form. And you can also grab questions from the Twitter hashtag of your choice.
 The idea behind this plugin is to integrate the capabilities of the Dilmot platform inside WordPress, so you can seamlessly get the chats inside the WordPress site.
+When you create a stream (chat page) in Dilmot, a new post will be created in the WordPress site where users will be able to send their questions and the live Q&A will be hosted.
 
 == Installation ==
 
