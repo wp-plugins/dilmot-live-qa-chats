@@ -1,0 +1,113 @@
+@media (max-width: 768px) {
+  .caption-home {
+    min-height: 220px;
+  }
+}
+.feature {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .feature {
+    font-size: 12px;
+  }
+  .caption-home h3 {
+    font-size: 18px;
+  }
+  .navbar-home {
+    font-size: 12px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-home {
+    font-size: 12px;
+  }
+}
+
+/* minimum width for avatar images */
+.avatar-bubble {
+  min-width: 39px;
+  margin: auto;
+  border-radius: 10%;
+  box-shadow:none !important;
+}
+.avatar-list {
+  min-width: 80px;
+}
+/* reduce gutter for columns with bubbles */
+.leftavatar {
+  min-width: 40px;
+}
+.rightbubble {
+  padding-left: -50px;
+}
+/* reduce margins for small devices */
+@media (max-width: 768px) {
+  .leftavatar {
+    padding-left: 0px;
+  }
+  .avatar-left {
+    padding-left: 0px;
+  }
+}
+/* square logo in navbar */
+
+.clearboth {
+  clear: both;
+}
+
+.interaction-toolbar {
+  top: -8px;
+  position: relative;
+  right: 20px;
+  visibility: hidden;
+}
+.interaction-toolbar span.small {
+  margin-left: 5px;
+}
+.interaction-holder:hover .interaction-toolbar {
+  visibility: visible;
+}
+.interaction-holder.active {
+  padding-bottom: 30px;
+}
+
+.interaction-toolbar .social-share-button {
+  display: inline;
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+
+/* public stream page */
+#stream_description_public {
+  font-size: 12px;
+}
+
+.rounded-corners {
+  border-radius: 5%;
+}
+
+.bubble iframe,
+.bubble img,
+.interaction-holder iframe,
+.interaction-holder img {
+  max-width: 100%;
+  box-shadow:none !important;
+}
+
+.bubble p { 
+  font-size: 14px;
+}
+
+.small.text-center {
+  font-size: 12px !important;
+}
+
+#public-stream-guest-image {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.zero-lateral-padding {
+  padding-left:0px !important;
+  padding-right:0px !important;
+}

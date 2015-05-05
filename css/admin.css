@@ -1,0 +1,10 @@
+table.dilmot-settings th , table.dilmot-settings td {
+	padding: 3px
+}
+table.dilmot-settings th {
+	text-align: left
+}
+
+.dashicons.disabled {
+	color:#B0B0B0;
+}
