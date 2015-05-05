@@ -56,8 +56,8 @@ class Dilmot_StreamShortCode extends Dilmot_ShortCodeLoader {
         $templateData['accout_url'] = $aPlugin->getAccountUrl($account);
         $templateData['stream_info_box_html'] = $aPlugin->get_single_custom_value('stream_info_box_html');
 
-        $templateData['stream_image'] = $templateData['accout_url'] . $aPlugin->get_single_custom_value('image');
-        $templateData['stream_image_thumb'] = $templateData['accout_url'] . $aPlugin->get_single_custom_value('image_thumb');
+        $templateData['stream_image'] = $aPlugin->get_single_custom_value('image');
+        $templateData['stream_image_thumb'] = $aPlugin->get_single_custom_value('image_thumb');
 
         $isPrivateStream = $aPlugin->get_single_custom_value('private_stream');
         if ($isPrivateStream) {
@@ -65,7 +65,15 @@ class Dilmot_StreamShortCode extends Dilmot_ShortCodeLoader {
         } else {
             $templateData['private_stream_pass'] = '';
         }
-        
+
+        // render stream header
+        $custom_stream_header = $aPlugin->get_single_custom_value('custom_stream_header');
+        $stream_header_file = "stream_header/$custom_stream_header.php";
+        if (!file_exists(dirname(__FILE__)."/templates/$stream_header_file")) {
+            error_log("Stream header file '$stream_header_file' does not exist");
+            $stream_header_file = "stream_header/vertical_image.php";
+        }
+        $templateData['stream_header'] = $this->render_template($stream_header_file, $templateData);
 
         $this->register_stylesheets_and_scripts($aPlugin, $is_single_post);
 

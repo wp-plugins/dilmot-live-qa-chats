@@ -95,11 +95,19 @@
   box-shadow:none !important;
 }
 
-
 .bubble p { 
   font-size: 14px;
 }
 
 .small.text-center {
   font-size: 12px !important;
+}
+
+#public-stream-guest-image {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.zero-lateral-padding {
+  padding-left:0px !important;
+  padding-right:0px !important;
 }

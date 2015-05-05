@@ -14,17 +14,6 @@ var error_html = "<div class='alert alert-warning'>" + error_msg + "</div>";
 <?php } ?>
 </script>
 
-<div class="col-sm-12">
-	<div class="col-sm-3">
-		<img class="img-responsive" id="public-stream-guest-image" src="<?php echo $templateData['stream_image']; ?>">
-	</div>
-  
-	<div class="col-sm-9" style="padding-left:0px;padding-right:0px;">
-		<iframe src="<?php echo $templateData['accout_url']; ?>/streams/<?php echo $templateData['stream_slug']; ?>/embed/new-question-form?title=false" id="new-question-form" width="100%" height="290" scrolling="no" frameborder="0"></iframe>
-	</div>		
-</div>
-		<?php if ($templateData['stream_info_box_html']) { ?>
-			<?php echo $templateData['stream_info_box_html']; ?>
-		<?php } ?>
+<?php echo $templateData['stream_header']; ?>
 
 <div id="stream_holder" style="clear:both"></div>

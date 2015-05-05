@@ -6,7 +6,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 The Dilmot plugin allows you to host real-time Q&A chats in your WordPress site by linking your WordPress site with your Dilmot.com account.
 
@@ -76,4 +76,7 @@ Make sure that you have your WordPress debug configuration, in the wp-config.php
 
 = 1.0 =
 - First release in the plugin repository
+
+= 1.1 = 
+- Fixed loading the correct urls of Dilmot images
 

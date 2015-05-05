@@ -5,7 +5,7 @@
 		<img class="img-responsive" id="public-stream-guest-image" src="<?php echo $templateData['stream_image']; ?>">
 	</div>
   
-	<div class="col-sm-8 col-lg-8" style="padding-left:0px;padding-right:0px;">
+	<div class="col-sm-8 col-lg-8 zero-lateral-padding">
 		<?php if ($templateData['stream_info_box_html']) { ?>
 			<?php echo $templateData['stream_info_box_html']; ?>
 		<?php } ?>

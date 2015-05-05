@@ -168,6 +168,7 @@ class Dilmot_api {
     	'starts_at' => 'starts_at',
     	'private_stream' => 'private_stream',
     	'private_stream_pass' => 'private_stream_pass',
+    	'custom_stream_header' => 'custom_stream_header',
 		);
 
 		foreach ($keysMap as $custom_field_name => $stream_info_key) {
