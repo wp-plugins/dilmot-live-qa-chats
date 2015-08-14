@@ -2,9 +2,9 @@
 /*
    Plugin Name: Dilmot
    Plugin URI: http://wordpress.org/extend/plugins/dilmot/
-   Version: 1.1
+   Version: 1.2
    Author: 
-   Description: Allows you to connect your wordpress site with Dilmot, and publish automatically your streams from Dilmot to your WordPress site
+   Description: Allows you to connect your wordpress site with Dilmot live blogging platform, and publish automatically your live streams from Dilmot to your WordPress site
    Text Domain: dilmot
    License: GPLv3
   */

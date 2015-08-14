@@ -1,16 +1,6 @@
 <?php include sprintf("%s/common.php", dirname(__FILE__)); ?>
 
-<div class="col-sm-12">
-	<div class="col-sm-4 col-lg-4">
-		<img class="img-responsive" id="public-stream-guest-image" src="<?php echo $templateData['stream_image']; ?>">
-	</div>
-  
-	<div class="col-sm-8 col-lg-8 zero-lateral-padding">
-		<?php if ($templateData['stream_info_box_html']) { ?>
-			<?php echo $templateData['stream_info_box_html']; ?>
-		<?php } ?>
-	</div>		
-</div>
+<?php echo $templateData['stream_header']; ?>
 
 <div id="stream_holder">
 	<?php echo $templateData['stream_html']; ?>

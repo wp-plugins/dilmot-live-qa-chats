@@ -1,14 +1,14 @@
 === Dilmot live Q&A chats ===
 Contributors: guyaloni, dilmot
 Donate link:
-Tags: interview, Q&A, Dilmot, chat, moderation, live, comments, debate 
+Tags: live blogging, interview, Q&A, Dilmot, chat, moderation, live, comments, debate 
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 1.1
+Stable tag: 1.2
 
-The Dilmot plugin allows you to host real-time Q&A chats in your WordPress site by linking your WordPress site with your Dilmot.com account.
+The Dilmot plugin allows you to host live blogging sessions and real-time Q&A chats in your WordPress site by linking your WordPress site with your Dilmot.com account.
 
 == Description ==
 
@@ -38,7 +38,7 @@ After you have done these steps, your plugin is ready to work with your Dilmot.c
 
 = Does this plugin change the stream published in my Dilmot account page? =
 
-No. The plugin works independently and your Dilmot page will still display the Q&A stream as usual.
+No. The plugin works independently and your Dilmot page will still display the live stream as usual.
 
 = What information is stored in my WordPress site? =
 
@@ -79,4 +79,7 @@ Make sure that you have your WordPress debug configuration, in the wp-config.php
 
 = 1.1 = 
 - Fixed loading the correct urls of Dilmot images
+
+= 1.2 =
+- Loads different types of header selected in Dilmot app
 

@@ -55,6 +55,7 @@ class Dilmot_StreamShortCode extends Dilmot_ShortCodeLoader {
         $templateData['stream_slug'] = $aPlugin->get_single_custom_value('stream_slug');
         $templateData['accout_url'] = $aPlugin->getAccountUrl($account);
         $templateData['stream_info_box_html'] = $aPlugin->get_single_custom_value('stream_info_box_html');
+        $templateData['stream_status'] = $stream_status;
 
         $templateData['stream_image'] = $aPlugin->get_single_custom_value('image');
         $templateData['stream_image_thumb'] = $aPlugin->get_single_custom_value('image_thumb');

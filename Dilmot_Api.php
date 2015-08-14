@@ -128,13 +128,11 @@ class Dilmot_api {
 
 		$streamInfo = $data["stream_info"];
 
-		$category = $this->aPlugin->getOption('StreamsCategory');
 		$post = array(
 			'post_content'   => "[dilmot-stream account=\"{$this->account}\" id=\"$stream_id\"]",
 			'post_name'      => $streamInfo['title'],
 			'post_title'     => $streamInfo['title'],
 			'post_status'    => 'publish',
-			'post_category'  => array($category),
 		);
 
 		if ($streamInfo['private_stream'] && !empty($streamInfo['private_stream_pass'])) {
@@ -144,15 +142,53 @@ class Dilmot_api {
 		}
 
 		if ($this->post_id) {
+			// Post exists already, we only need to update it and its categories
 			$post['ID'] = $this->post_id;
 			$post_id = wp_update_post( $post );	
 
 		} else {
+			// This is a new post, we assign the plugin default category only when creating the post
+			$defaultCategory = $this->aPlugin->getOption('StreamsCategory');			
+			$post['post_category'] = array($defaultCategory);
 			$post_id = wp_insert_post( $post );	
 			if (!$post_id) {
 				throw new Exception('Failed to create new post');
 			}
 		}
+
+			// ********************************************************
+			// check if we need to update post category/categories
+			$post_categories = wp_get_post_categories($post_id);
+
+			// check whether we need to remove old category
+			$old_category_name = $data["stream_info"]["old_category"];
+			if ($old_category_name) {
+				$old_category = get_term_by('name', $old_category_name, 'category');
+				if ($old_category) {
+					$old_category_id = $old_category->term_id;
+					if (($old_category_key = array_search($old_category_id, $post_categories)) !== false) {
+				    unset($post_categories[$old_category_key]);
+					}	
+				}
+			}
+
+			// check whether we need to apply new category
+			$category_name = $data["stream_info"]["category"];
+			if ($category_name) {
+				$stream_category = get_term_by('name', $category_name, 'category');
+				if ($stream_category) {
+					if (!in_array($stream_category->term_id, $post_categories)) {
+						$post_categories[] = $stream_category->term_id;
+					}
+				} else {
+					// category does not exist, we need to create it
+					$new_category = wp_insert_term($category_name, 'category');
+					$post_categories[] = $new_category[term_id];
+				}
+			}
+
+			wp_set_post_categories( $post_id, $post_categories );
+			// ********************************************************
 
 		// create custom fields array
 		$custom_fields = array('stream_id' => $stream_id);
@@ -188,6 +224,13 @@ class Dilmot_api {
 		// get the stream info box html
 		if (array_key_exists("stream_info_box_html", $data)) {
 			$meta_id = update_post_meta($post_id, 'stream_info_box_html', $data["stream_info_box_html"]);
+		}
+
+		if ($custom_fields['stream_status'] == 'closed') {
+			$streamHtml = isset($data["stream_html"]) ? $data["stream_html"] : '';
+			$meta_id = update_post_meta($post_id, 'stream_html', $streamHtml);
+		} else {
+			$meta_id = update_post_meta($post_id, 'stream_html', '');
 		}
 
 		$post_url = get_permalink($post_id);

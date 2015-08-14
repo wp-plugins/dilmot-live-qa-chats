@@ -41,18 +41,20 @@ jQuery(document).ready(function() {
 		// ***************************************************************************
 	  jQuery( window ).on("resize", function() {
 			var win = document.getElementById("new-question-form").contentWindow;
-			win.postMessage("", "*");
+			win.postMessage("questionFormHeightRequest", "*");
 	  });	
 
 		jQuery('#new-question-form').load(function() {
 			var win = document.getElementById("new-question-form").contentWindow;
-			win.postMessage("", "*");
+			win.postMessage("questionFormHeightRequest", "*");
 		});
 
 
 		function listener(event){
-			var newHeight = event.data
-			jQuery('#new-question-form').height(newHeight);
+			if (typeof(event.data.questionFormDivHeight) !== 'undefined') {
+				var newHeight = event.data.questionFormDivHeight;
+				jQuery('#new-question-form').height(newHeight);
+			}
 		}
 
 		if (window.addEventListener){
