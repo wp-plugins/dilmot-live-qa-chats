@@ -1,0 +1,87 @@
+		
+/* custom bubble */
+.bubble {
+	position: relative;
+	width: 100%;
+	min-height: 75px;
+	padding: 20px;
+	-webkit-border-radius: 15px !important;
+	-moz-border-radius: 15px !important;
+	border-radius: 15px !important;
+	margin-bottom: 10px;
+}
+
+.bubble:after  {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: 27px;
+}
+
+.bubble:before  {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	display: block;
+	width: 0;
+	z-index: 0;
+	top: 25px;
+}
+
+.bubble-left {
+	background: #FFFFFF !important;
+	border: #DEDEDE solid 3px !important;
+	color: black;
+	font-weight: bold
+}
+
+.bubble-left:after {
+	border-width: 10px 18px 10px 0;
+	left: -18px;
+	border-color: transparent #FFFFFF !important; /* same as background for left triangle */
+}
+
+.bubble-left:before {
+	border-width: 12px 20px 12px 0;
+	left: -23px;
+	border-color: transparent #DEDEDE !important;
+}
+
+.bubble-right {
+	background: #EBEBEB !important;
+	border: #DEDEDE solid 3px !important;
+	color: #151314;
+	font-weight: normal
+}
+
+.bubble-right:after {
+	border-width: 10px 0 10px 18px;
+	right: -18px;
+	border-color: transparent #EBEBEB !important; /* same as background for left triangle */
+
+}
+
+.bubble-right:before {
+	border-width: 12px 0 12px 20px;
+	right: -23px;
+	border-color: transparent #DEDEDE !important;
+}
+
+.bubble-shadow {
+	background: #EBEBEB !important;
+	border: #DEDEDE solid 3px !important;	
+	color: #151314;
+	font-weight: bold
+}
+
+.bubble-shadow:after {
+	border-color: transparent #EBEBEB !important; /* same as background for left triangle */
+}
+
+.bubble-shadow:before {
+	border-color: transparent #DEDEDE !important; /* same as background for left triangle */
+}
